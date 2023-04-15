@@ -43,7 +43,6 @@ Spring Boot. Требования:
 Версия JDK - 17\
 Версия GRADLE - 7.6.1\
 `org.springframework.boot:spring-boot-starter-data-jpa`
-\ 
 `org.springframework.boot:spring-boot-starter-web`
 `org.postgresql:postgresql` 
 `org.springframework.boot:spring-boot-starter-test`
