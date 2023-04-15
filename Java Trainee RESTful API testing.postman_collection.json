@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "096ca7a5-e6b4-4d3a-b34c-a8d8165c43f5",
+		"name": "Java Trainee RESTful API testing",
+		"description": "Collection for testing CRUD RESTful API endpoints(GET, POST, PUT, DELETE).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USERS POST REQUEST",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nickName\": \"JavaTrainee\",\n    \"dob\": \"27/07/2001\",\n    \"email\": \"olegi.talantov@gmail.com\",\n    \"password\": \"123123\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USERS GET REQUEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USERS PUT REQUEST",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nickName\": \"winterec v2\",\n    \"dob\": \"27/07/2001\",\n    \"email\": \"olegi.talantov@gmail.com\",\n    \"password\": \"supersecretpassword\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USERS DELETE REQUEST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONFIGURATIONS POST REQUEST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"123\",\n    \"uploadDate\":\"09/09/2009\",\n    \"author\":1,\n    \"description\":\"testing api\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/configurations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configurations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONFIGURATIONS GET REQUEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/configurations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configurations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONFIGURATIONS PUT REQUEST",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"POSTMAN COLLECTION\",\n    \"uploadDate\":\"09/09/2009\",\n    \"author\":1,\n    \"description\":\"testing api\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/configurations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configurations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONFIGURATIONS DELETE REQUEST",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/configurations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configurations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
