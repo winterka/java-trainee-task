@@ -39,13 +39,14 @@ Spring Boot. Требования:
 | description      | VARCHAR(255)   |     |
 
 Между объектами композиции установлена связь 'один ко многим', т.к. один пользователь может являться автором множества конфигурационных файлов.
+Во избежание создания лишних, для такого проекта, слоев абстракции была выбрана структура проекта представленная в официальной документации -https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.structuring-your-code
 ## Используемые зависимости
 Версия JDK - 17\
 Версия GRADLE - 7.6.1\
-`org.springframework.boot:spring-boot-starter-data-jpa`
-`org.springframework.boot:spring-boot-starter-web`
-`org.postgresql:postgresql` 
-`org.springframework.boot:spring-boot-starter-test`
+`org.springframework.boot:spring-boot-starter-data-jpa` - для работы с JPA и Hibernate;
+`org.springframework.boot:spring-boot-starter-web` - для работы с построений веб приложения и API;
+`org.postgresql:postgresql` - для работы с базой данных;
+`org.springframework.boot:spring-boot-starter-test` - для работы с тестами;
 ## Инструкция по сборке и запуску
 **Указаные инструкции не обходимо выполнять из корневой директории проекта**
 1. Собрать образ базы данных `docker build -t trainee-db ./`
