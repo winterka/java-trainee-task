@@ -40,12 +40,12 @@ Spring Boot. Требования:
 
 Между объектами композиции установлена связь 'один ко многим', т.к. один пользователь может являться автором множества конфигурационных файлов.
 ## Используемые зависимости
-Версия JDK - 17
-Версия GRADLE - 7.6.1
-`org.springframework.boot:spring-boot-starter-data-jpa` \n
-`org.springframework.boot:spring-boot-starter-web` \n
-`org.postgresql:postgresql` \n
-`org.springframework.boot:spring-boot-starter-test` \n
+Версия JDK - 17\
+Версия GRADLE - 7.6.1\
+`org.springframework.boot:spring-boot-starter-data-jpa`\ 
+`org.springframework.boot:spring-boot-starter-web`\ 
+`org.postgresql:postgresql`\ 
+`org.springframework.boot:spring-boot-starter-test`\ 
 ## Инструкция по сборке и запуску
 **Указаные инструкции не обходимо выполнять из корневой директории проекта**
 1. Собрать образ базы данных `docker build -t trainee-db ./`
