@@ -42,10 +42,10 @@ Spring Boot. Требования:
 ## Используемые зависимости
 Версия JDK - 17
 Версия GRADLE - 7.6.1
-`org.springframework.boot:spring-boot-starter-data-jpa` 
-`org.springframework.boot:spring-boot-starter-web` 
-`org.postgresql:postgresql` 
-`org.springframework.boot:spring-boot-starter-test` 
+`org.springframework.boot:spring-boot-starter-data-jpa` \n
+`org.springframework.boot:spring-boot-starter-web` \n
+`org.postgresql:postgresql` \n
+`org.springframework.boot:spring-boot-starter-test` \n
 ## Инструкция по сборке и запуску
 **Указаные инструкции не обходимо выполнять из корневой директории проекта**
 1. Собрать образ базы данных `docker build -t trainee-db ./`
